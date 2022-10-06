@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Timeline from './components/timeline/Timeline';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Timeline/>
+      
     </div>
   );
 }
 
+
+
 export default App;
+
+/*
+      Timeline
+        school
+          2001 havo
+          2002-2004 hbo
+          2016 started learning programming
+        work
+          1999-2006 mcdonalds
+          2006-2017 ah online
+          2017-2018 treinverkeersleider
+          2018-heden kpn monteur
+      Interesses
+        Cosplay
+        Photography
+      Goals
+        Timeline
+      Lets do this together
+        Contact*/
