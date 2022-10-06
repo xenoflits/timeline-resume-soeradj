@@ -1,0 +1,29 @@
+#timeline-picker {
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.school, .work {
+    display: flex;
+    width:50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.timeline-li {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+.timeline-li:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+

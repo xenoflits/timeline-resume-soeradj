@@ -1,11 +1,21 @@
 import './App.css';
+import { useState } from 'react';
 import Timeline from './components/timeline/Timeline';
+import Container from './components/Container/Container';
+import Year2000 from './components/timeline/Year2000/Year2000';
 
 function App() {
+  const [time, setTime] = useState(7)
+  const handleClick = (e) => {
+    let time = e.target.id.charAt(4)
+    setTime(time);
+  }
+  
+  
   return (
     <div className="App">
-      <Timeline/>
-      
+      <Timeline handleClick={handleClick} time={time}/>
+   
     </div>
   );
 }
@@ -13,22 +23,3 @@ function App() {
 
 
 export default App;
-
-/*
-      Timeline
-        school
-          2001 havo
-          2002-2004 hbo
-          2016 started learning programming
-        work
-          1999-2006 mcdonalds
-          2006-2017 ah online
-          2017-2018 treinverkeersleider
-          2018-heden kpn monteur
-      Interesses
-        Cosplay
-        Photography
-      Goals
-        Timeline
-      Lets do this together
-        Contact*/
